@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 body {
@@ -23,6 +24,10 @@ h1 {
     top: 0;
     height: 5em;
     line-height: 3em;
+}
+
+.navbar:hover{
+    color: black;
 }
 
 
@@ -90,11 +95,11 @@ li {
 	margin-top: 8px;
 }
 
-/* Scroll animation */
+
 @keyframes scroll {
 	0% {
 		transform: translateY(0);
-	}
+	} 
 
 	50% {
 		transform: translateY(8px);
@@ -114,3 +119,4 @@ li {
     cursor: pointer;
 
 }
+
