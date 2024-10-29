@@ -10,9 +10,6 @@
     <!--Detail Icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--Social Icons-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 
 
@@ -21,7 +18,6 @@
 <body>
     <!--Navigation bar with external links-->
     <header id="header-styles">
-        <h1>Portfolio</h1>
         <div class="nav-container borderYtoX">
             <nav class="navbar">
                 <ul>
@@ -37,29 +33,27 @@
 
     <h1 class="contact">Contact Details</h1>
 
-    <div class="details">
-        <box-icon type='solid' name='envelope'></box-icon>
-        <aside> sandumi.20232516@iit.ac.lk </aside>
-        <box-icon name='current-location'></box-icon>
-        <aside>No 03,<br> Pathum Uyana, <br> Pallekale, Kundasale. </aside>
-        <box-icon name='phone-call'></box-icon>
-        <aside> 071-2757620 </aside>
-<br><br>
-        <ul class="social-icons">
-            <li>
-                <a href="#">
-                    <i class="fab fa-facebook-f icon"></i> </a>
-            </li>
-            <li>
-                <a href="#"><i class="fab fa-twitter icon"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
-            </li>
-        </ul>
+    <section class="form-section">
+        <h2>Send me a Message!</h2>
+        <form name ="contact-me" method="POST" action="/test.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Your Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter Your Email Address">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter Your Message"></textarea>
+
+            <label>
+                <input type="checkbox" name="subscribe" value="yes"> I want to subscribe to the newsletter
+            </label>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
 
 
 

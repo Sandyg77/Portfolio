@@ -44,7 +44,7 @@ div.nav-container a {
     cursor: pointer;
 }
 
-/* Border from Y to X  */
+/* Border from Y to X  Navbar Animation*/
 div.borderYtoX a:before,
 div.borderYtoX a:after {
     position: absolute;
@@ -88,7 +88,7 @@ li {
     left: 0;
     top: 1rem;
     width: 100%;
-    background: rgba(210, 205, 205, 0.95);
+    background: rgba(53, 141, 196, 0.95);
     height: 4em;
     line-height: 3em;
     box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.1);
@@ -162,6 +162,61 @@ li {
     cursor: pointer;
 
 }
+/*Contact Page form stylings */
+
+.form-section {
+    max-width: 500px;
+    margin-top: 100px;
+    margin-right: 50px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    float: right;
+}
+
+.form-section:hover {
+    transform: scale(1.01);
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+/*Attribute selectors */
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: "Quicksand", sans-serif;
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e739c;
+}
+
 
 /*Hobbies - Card section css*/
 .best-section {
