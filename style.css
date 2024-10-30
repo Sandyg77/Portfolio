@@ -89,7 +89,6 @@ li {
 
 #header-styles {
     position: fixed;
-    z-index: 10000;
     left: 0;
     top: 1rem;
     width: 100%;
@@ -136,6 +135,19 @@ li {
     border-radius: 4px;
     animation: scroll 1s infinite;
     margin-top: 8px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 100px;
+    margin-left: 260px;
+    position: fixed;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.logo:hover{
+    color: #000;
 }
 
 
