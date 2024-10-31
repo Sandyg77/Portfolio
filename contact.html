@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" type="text/CSS">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
 </head>
 
 <body>
-    <!--Navigation bar with external links-->
     <header id="header-styles">
         <div class="nav-container borderYtoX">
             <nav class="navbar">
@@ -27,6 +27,7 @@
 
     <h1 class="topic-animation">Contact Details</h1>
 
+    <!--Form Section-->
     <section class="form-section">
         <h2>Send me a Message!</h2>
         <form name="contact-me" method="POST" action="/test.php">
@@ -48,46 +49,36 @@
         </form>
     </section>
 
-    <!--detail section-->
+    <!--Details Section-->
     <div class="details">
-            <div class="row">
-                <div class="contact-icons">
-                    <div class="col-sm-4">
-
-                        <i class="fa fa-phone-square" aria-hidden="true"></i>
-                        <p class="contact-header">CALL</p>
-                        <p class="contact-feature">+94 71 275 7620</p>
-                    </div>
-                </div>
-
-
-
-                <div class="contact-icons">
-                    <div class="col-sm-4">
-
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p class="contact-header">ADDRESS</p>
-                        <p class="contact-feature">No 03, Pathum Uyana, Pallekale, Kundasale.</p>
-                    </div>
-                </div>
-
-
-
-                <div class="contact-icons">
-                    <div class="col-sm-4">
-
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <p class="contact-header">EMAIL</p>
-                        <p class="contact-feature">sandumi.20232516@iit.ac.lk</p>
-                    </div>
-                </div>
-
-
+        <div class="row">
+            <div class="contact-icons">
+                <i class='bx bx-phone-call'></i>
+                <p class="contact-header">CALL</p>
+                <p class="contact-feature">+94 71 275 7620</p>
             </div>
+
+
+            <div class="contact-icons">
+                <i class='bx bxs-map-pin'></i>
+                <p class="contact-header">ADDRESS</p>
+                <p class="contact-feature">No 03, Pathum Uyana, Pallekale, Kundasale.</p>
+            </div>
+
+
+            <div class="contact-icons">
+                <i class='bx bxs-envelope'></i>
+                <p class="contact-header">EMAIL</p>
+                <p class="contact-feature">sandumi.20232516@iit.ac.lk</p>
+            </div>
+        </div>
     </div>
 
 
-
+    <footer>
+        Date modified: 2024 <br>
+        Sandumi Godage
+    </footer>
 </body>
 
 </html>

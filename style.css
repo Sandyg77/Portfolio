@@ -173,7 +173,7 @@ li {
     max-width: 500px;
     margin-right: 50px;
     padding: 30px;
-    background: #fff;
+    background: #c4f6f5;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -229,12 +229,13 @@ button[type="submit"]:hover {
 
 /*Contact Details*/
 .details {
-    max-width: 600px;
-    max-height: 750px;
+    max-width: 500px;
+    max-height: 700px;
     margin-top: 200px;
     margin-left: 50px;
+    margin-bottom: 50px;
     padding: 30px;
-    background: #fff;
+    background: #c4f6f5;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -252,14 +253,14 @@ button[type="submit"]:hover {
 
 
 .contact-header {
-    font: 14px "Doris", sans-serif;
+    font: 20px "Quicksand", sans-serif;;
     padding-top: 20px;
     letter-spacing: 7px;
 
 }
 
 .contact-feature {
-    font: 12px 'Montserrat', sans-serif;
+    font: 15px "Quicksand", sans-serif;;
     color: #404040;
     letter-spacing: 1.5px;
     line-height: 19px;
@@ -288,7 +289,7 @@ button[type="submit"]:hover {
 .topic-animation {
     margin-top: 100px;
     margin-left: 10px;
-    background-image: linear-gradient(-225deg, #2b867b 0%, #d2d2d2 29%, #3eb0b6 67%, #000000 100%);
+    background-image: linear-gradient(-225deg,#074158  0%, #2f5f98  29%, #119fab 67%, #000000 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -308,9 +309,14 @@ button[type="submit"]:hover {
 
 
 
-
-
-
+footer {background-color: #3ea7bc;
+color: black;
+text-align: center;
+padding: 10px 0;
+width: 100%;
+display: block;
+margin: 0%;
+}
 
 /* Add Media queries at last*/
 @media screen and (min-width: 480px) {}
