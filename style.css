@@ -148,7 +148,7 @@ li {
     cursor: pointer;
 }
 
-.logo:hover{
+.logo:hover {
     color: #000;
 }
 
@@ -181,12 +181,12 @@ li {
 }
 
 
-.form-section > h2 {
+.form-section>h2 {
     text-align: center;
     color: #333;
 }
 
-.form-section > p {
+.form-section>p {
     text-align: center;
 }
 
@@ -209,7 +209,7 @@ button[type="submit"] {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #333;
+    background-color: #091537;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -218,7 +218,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #3e739c;
+    background-color: #3ea7bc;
 }
 
 
@@ -233,8 +233,7 @@ button[type="submit"]:hover {
     padding: 30px;
     background: #c4f6f5;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contact-icons {
@@ -249,20 +248,39 @@ button[type="submit"]:hover {
 
 
 .contact-header {
-    font: 20px "Quicksand", sans-serif;;
+    font: 20px "Quicksand", sans-serif;
+    ;
     padding-top: 20px;
     letter-spacing: 7px;
 
 }
 
 .contact-feature {
-    font: 15px "Quicksand", sans-serif;;
+    font: 15px "Quicksand", sans-serif;
+    ;
     color: #404040;
     letter-spacing: 1.5px;
     line-height: 19px;
     text-align: center;
     padding-bottom: 20%;
 
+}
+
+/*Child combinator*/
+.contact-feature>a:link {
+    color: #041b2e;
+}
+
+.contact-feature>a:visited {
+    color: #119fab;
+}
+
+.contact-feature>a:hover {
+    color: #119fab;
+}
+
+.contact-feature>a:active {
+    color: #00308F;
 }
 
 /*Hobbies - Card section css*/
@@ -281,10 +299,11 @@ button[type="submit"]:hover {
 .hobbies:hover {
     transform: scale(1.5);
 }
+
 .topic-animation {
     margin-top: 100px;
     margin-left: 10px;
-    background: linear-gradient(-225deg,#074158  0%, #2f5f98  29%, #119fab 67%, #000000 100%);
+    background: linear-gradient(-225deg, #074158 0%, #2f5f98 29%, #119fab 67%, #000000 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -301,28 +320,32 @@ button[type="submit"]:hover {
     }
 }
 
-footer {background-color: #3ea7bc;
-color: black;
-text-align: center;
-padding: 10px 0;
-width: 100%;
-display: block;
-margin: 0%;
+footer {
+    background-color: #3ea7bc;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+    margin: 0%;
 }
 
-footer>a{
+footer>a {
     text-decoration: none;
     color: #041b2e;
 }
 
-footer>a:hover{
+footer>a:hover {
     animation: sparkEffect 1s infinite;
 }
 
 @keyframes sparkEffect {
-    0%, 100% {
+
+    0%,
+    100% {
         text-shadow: 0 0 5px #93dcdc, 0 0 10px #fff, 0 0 15px #2f5f98, 0 0 20px #ffffff, 0 0 25px #3fbdc9, 0 0 30px #6ce5e8, 0 0 35px #3fbdc9;
     }
+
     50% {
         text-shadow: 0 0 10px #93dcdc, 0 0 20px #fff, 0 0 30px #2f5f98, 0 0 40px #ffffff, 0 0 50px #3fbdc9, 0 0 60px #6ce5e8, 0 0 70px #3fbdc9;
     }
