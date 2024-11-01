@@ -204,7 +204,7 @@ textarea {
     transition: border-color 0.5s ease, box-shadow 0.6s ease;
 }
 
-textarea{
+textarea {
     border: 3px solid #091537;
     background-color: #85daec;
 
@@ -241,7 +241,7 @@ button[type="submit"]:not(:disabled) {
 }
 
 button[type="submit"]:not(:disabled):hover {
-    background-color: #3ea7bc; 
+    background-color: #3ea7bc;
 }
 
 
@@ -328,7 +328,8 @@ button[type="submit"]:not(:disabled):hover {
 }
 
 
-article p, article ul {
+article p,
+article ul {
     font-size: 18px;
     color: #555;
 }
@@ -374,21 +375,21 @@ article p, article ul {
 }
 
 /* Pseudo Class */
-.card > h4:first-of-type {
+.card>h4:first-of-type {
     color: #119fab;
     font-size: 30px;
     text-transform: uppercase;
 }
 
 /* Targets the second h4 element */
-.card > h4:nth-of-type(2) {
+.card>h4:nth-of-type(2) {
     color: rgb(10, 43, 89);
 }
 
-.hobby-img{
-width: 50%;
-height: 45%;
-border-radius: 10px;
+.hobby-img {
+    width: 50%;
+    height: 45%;
+    border-radius: 10px;
 }
 
 
@@ -432,7 +433,80 @@ footer>a:hover {
     }
 }
 
+/* About Me */
 
+/* Main content styling */
+.content-section {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #091537;
+    margin-bottom: 1em;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.education-item {
+    margin-top: 30px;
+    background-color: #f8f9fa;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-item:nth-child(2) {
+    background-color: #b9f6ff;
+}
+
+.education-item:nth-child(3) {
+    background-color: #a4fdfb;
+}
+
+.education-item:nth-child(4){
+    background-color: #b9f6ff;
+}
+.education-item:nth-child(5){
+    background-color: #a4fdfb;
+
+}
+/* Goals Container */
+.goals-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+/* Individual goal card styling */
+.goal-card {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color:#b9f6ff ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 1em;
+    }
+
+    .goal-card {
+        flex: 1 1 100%;
+    }
+}
 
 /* Add Media queries at last*/
 @media screen and (min-width: 480px) {}
