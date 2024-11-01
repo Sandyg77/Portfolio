@@ -102,10 +102,20 @@ li {
     z-index: 1000;
 }
 
-.content {
+.intro-content {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding-left: 50px;
+    margin-top: 150px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-bottom: 50px;
+    border-radius: 20px;
     text-align: center;
-    margin-top: 20%;
-    font-size: larger;
+    font-size: 18px;
 
 }
 
@@ -467,13 +477,15 @@ footer>a:hover {
     background-color: #a4fdfb;
 }
 
-.education-item:nth-child(4){
+.education-item:nth-child(4) {
     background-color: #b9f6ff;
 }
-.education-item:nth-child(5){
+
+.education-item:nth-child(5) {
     background-color: #a4fdfb;
 
 }
+
 /* Goals Container */
 .goals-container {
     display: flex;
@@ -486,7 +498,7 @@ footer>a:hover {
 /* Individual goal card styling */
 .goal-card {
     flex: 1 1 calc(33.333% - 20px);
-    background-color:#b9f6ff ;
+    background-color: #b9f6ff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -508,5 +520,34 @@ footer>a:hover {
     }
 }
 
+.CV-button {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    color: #f9fafa;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+
+}
+
+.CV-button:not(:disabled) {
+    background-color: #091537;
+}
+.CV-button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    background-color: #3ea7bc;
+}
+
+.CV-button a{
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #041b2e;
+    color: lightcyan;
+}
 /* Add Media queries at last*/
 @media screen and (min-width: 480px) {}
