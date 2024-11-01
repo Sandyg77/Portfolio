@@ -32,7 +32,6 @@ h1 {
 
 }
 
-
 div.nav-container {
     margin: 0 auto;
     padding: 10em 3em;
@@ -91,14 +90,16 @@ li {
 
 #header-styles {
     position: fixed;
+    top: 0;
     left: 0;
-    top: 1rem;
     width: 100%;
     background: #3ea7bc;
     height: 4em;
-    line-height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.1);
-
+    z-index: 1000;
 }
 
 .content {
@@ -141,10 +142,10 @@ li {
 
 .logo {
     border-radius: 50%;
-    width: 100px;
-    margin-left: 260px;
+    width: 60px;
+    margin-left: 50px;
     position: fixed;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     cursor: pointer;
 }
 
@@ -168,7 +169,6 @@ li {
 }
 
 
-
 /*Contact Page Stylings */
 .form-section {
     max-width: 500px;
@@ -178,6 +178,7 @@ li {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     float: right;
+
 }
 
 
@@ -186,7 +187,8 @@ li {
     color: #333;
 }
 
-.form-section>p {
+
+.form-section p {
     text-align: center;
 }
 
@@ -198,9 +200,14 @@ textarea {
     width: 100%;
     padding: 5px;
     margin: 10px 0;
-    border: 1px solid #ddd;
     border-radius: 4px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.5s ease, box-shadow 0.6s ease;
+}
+
+textarea{
+    border: 3px solid #091537;
+    background-color: #85daec;
+
 }
 
 
@@ -209,18 +216,33 @@ button[type="submit"] {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #091537;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
-    background-color: #3ea7bc;
+input[required] {
+    background-color: #85daec;
 }
 
+input:valid {
+    border: 5px solid rgb(54, 223, 167);
+}
+
+input:invalid {
+    border: 3px solid #091537;
+}
+
+/* Negation pseudo-class*/
+button[type="submit"]:not(:disabled) {
+    background-color: #091537;
+}
+
+button[type="submit"]:not(:disabled):hover {
+    background-color: #3ea7bc; 
+}
 
 
 /*Contact Details*/
@@ -229,11 +251,12 @@ button[type="submit"]:hover {
     max-height: 700px;
     margin-top: 200px;
     margin-left: 50px;
-    margin-bottom: 50px;
     padding: 30px;
     background: #c4f6f5;
     border-radius: 8px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 15px rgb(0, 0, 0);
+    margin-bottom: 100px;
+
 }
 
 .contact-icons {
@@ -257,7 +280,6 @@ button[type="submit"]:hover {
 
 .contact-feature {
     font: 15px "Quicksand", sans-serif;
-    ;
     color: #404040;
     letter-spacing: 1.5px;
     line-height: 19px;
@@ -284,21 +306,6 @@ button[type="submit"]:hover {
 }
 
 /*Hobbies - Card section css*/
-.hobbies {
-    width: 230px;
-    height: 270px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #00308F;
-    align-content: center;
-    margin: 25px 50px 75px 100px;
-    transition: transform .5s;
-}
-
-
-.hobbies:hover {
-    transform: scale(1.5);
-}
 
 .topic-animation {
     margin-top: 100px;
@@ -310,8 +317,59 @@ button[type="submit"]:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 4s linear infinite;
+}
 
 
+.blog-post {
+    width: 90%;
+    margin-top: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+article p, article ul {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* Content for hobbies and projects */
+.card-content {
+    display: flex;
+    gap: 30px;
+    margin: 20px 20px 20px 20px;
+
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #c4f6f5;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card h4 {
+    font-size: 20px;
+    color: #091537;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hobby-img{
+width: 40%;
+height: 40%;
 }
 
 @keyframes textclip {
@@ -321,14 +379,17 @@ button[type="submit"]:hover {
 }
 
 footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #3ea7bc;
     color: black;
     text-align: center;
     padding: 10px 0;
-    width: 100%;
-    display: block;
-    margin: 0%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
 }
+
 
 footer>a {
     text-decoration: none;
@@ -350,6 +411,8 @@ footer>a:hover {
         text-shadow: 0 0 10px #93dcdc, 0 0 20px #fff, 0 0 30px #2f5f98, 0 0 40px #ffffff, 0 0 50px #3fbdc9, 0 0 60px #6ce5e8, 0 0 70px #3fbdc9;
     }
 }
+
+
 
 /* Add Media queries at last*/
 @media screen and (min-width: 480px) {}
