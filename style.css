@@ -11,9 +11,10 @@ body {
 }
 
 .topic-animation {
-    margin-top: 100px;
+    margin-top: 120px;
     margin-left: 10px;
     background: linear-gradient(-225deg, #074158 0%, #ced1d8 29%, #0d4d58 67%, #a49e9e 100%);
+    /* Gradient */
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -60,8 +61,10 @@ div.nav-container {
     color: white;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     border-bottom: solid white;
+    opacity: 0.5;
+    /*semitransparent color*/
 }
 
 ul,
@@ -137,6 +140,7 @@ li {
     margin-bottom: 1%;
     cursor: pointer;
 }
+
 .home-content {
     display: flex;
     flex-wrap: wrap;
@@ -165,7 +169,7 @@ li {
     position: relative;
 }
 
-/* Sliding text effect */
+/* Sliding text effect line */
 .sliding-text::after {
     content: "";
     display: block;
@@ -283,6 +287,7 @@ li {
         transform: translateY(0);
     }
 }
+
 /***************** About Me ***************/
 .content-section {
     padding: 2em;
@@ -369,6 +374,10 @@ li {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
 }
 
 .CV-button:not(:disabled) {
@@ -381,13 +390,6 @@ li {
     background-color: #738999;
 }
 
-.CV-button a {
-    font-family: "Quicksand", sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #041b2e;
-    color: lightcyan;
-}
 /***********Hobbies and Projects********/
 .entire-content {
     display: flex;
@@ -461,6 +463,7 @@ article ul {
         background-position: 200%;
     }
 }
+
 /************* Contact Page ************/
 .contact-content {
     display: flex;
@@ -622,6 +625,7 @@ button[type="submit"]:not(:disabled):hover {
 }
 
 @media (max-width: 480px) {
+
     /* Adjust font sizes and spacing for small screens */
     .form-section,
     .details {
@@ -650,6 +654,7 @@ button[type="submit"]:not(:disabled):hover {
         border-radius: 50%;
 
     }
+
     .social-media-icons {
         float: right;
         margin-top: 280px;
@@ -664,7 +669,8 @@ button[type="submit"]:not(:disabled):hover {
 @media (max-width: 1200px) {
     .home-content {
         display: flex;
-        flex-wrap: wrap;        /*Moves to the next line*/
+        flex-wrap: wrap;
+        /*Moves to the next line*/
         align-items: center;
         justify-content: center;
         padding: 80px 40px;
@@ -731,12 +737,12 @@ button[type="submit"]:not(:disabled):hover {
         box-shadow: 0 15px 25px #175b6778;
     }
 
-    #header-styles{
+    #header-styles {
         flex-direction: column;
-        
+
     }
 
-    .intro-content{
+    .intro-content {
         margin-top: 300px;
     }
 
