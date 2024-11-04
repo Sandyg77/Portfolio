@@ -639,11 +639,6 @@ button[type="submit"]:not(:disabled):hover {
         padding: 80px 40px;
     }
 
-    .intro-container {
-        align-items: center;
-        gap: 5px;
-    }
-
     .profile-image {
         width: 350px;
         height: 350px;
@@ -678,6 +673,7 @@ button[type="submit"]:not(:disabled):hover {
     .text-content {
         width: 100%;
         max-width: 100%;
+        margin-top: 200px;
     }
 
     .intro-container {
