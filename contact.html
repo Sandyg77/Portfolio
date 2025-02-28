@@ -1,86 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sandumi Godage</title>
-    <link rel="stylesheet" href="style.css" type="text/CSS">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" type="text/CSS" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <header id="header-styles">
-        <a href="home.html"><img src="/images/logoWhite.png" class="logo" alt="logo"></a>
-        <div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="home.html" target="_self">Home</a></li>
-                    <li><a href="aboutMe.html" target="_self">About Me</a></li>
-                    <li><a href="hobbies.html" target="_self">Hobbies & Projects</a></li>
-                    <li><a href="contact.html" target="_self">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>
+      <a href="index.html"
+        ><img src="/images/logoWhite.png" class="logo" alt="logo"
+      /></a>
+      <div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="aboutMe.html" target="_self">About Me</a></li>
+            <li>
+              <a href="hobbies.html" target="_self">Hobbies & Projects</a>
+            </li>
+            <li><a href="contact.html" target="_self">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <h1 class="topic-animation">Contact Details</h1>
 
     <main class="contact-content">
-        <!--Form Section-->
-        <section class="form-section">
-            <h2>Send me a Message!</h2>
-            <form name="contact-me" method="POST" action="/test.php">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Enter Your Name">
+      <!--Form Section-->
+      <section class="form-section">
+        <h2>Send me a Message!</h2>
+        <form name="contact-me" method="POST" action="/test.php">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter Your Name"
+          />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Enter Your Email Address">
-                <p>I won't spam you!</p>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter Your Email Address"
+          />
+          <p>I won't spam you!</p>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Enter Your Message"></textarea>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Enter Your Message"
+          ></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe" value="yes"> I want to subscribe to the newsletter
-                </label>
-                <br><br>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+          <label>
+            <input type="checkbox" name="subscribe" value="yes" /> I want to
+            subscribe to the newsletter
+          </label>
+          <br /><br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
 
-        <!--Details Section-->
-        <div class="details">
-            <div class="row">
-                <div class="contact-icons">
-                    <i class='bx bx-phone-call'></i>
-                    <p class="contact-header">CALL</p>
-                    <p class="contact-feature">+94 71 275 7620</p>
-                </div>
+      <!--Details Section-->
+      <div class="details">
+        <div class="row">
+          <div class="contact-icons">
+            <i class="bx bx-phone-call"></i>
+            <p class="contact-header">CALL</p>
+            <p class="contact-feature">+94 71 275 7620</p>
+          </div>
 
+          <div class="contact-icons">
+            <i class="bx bxs-map-pin"></i>
+            <p class="contact-header">ADDRESS</p>
+            <p class="contact-feature">
+              No 03, Pathum Uyana, Pallekale, Kundasale.
+            </p>
+          </div>
 
-                <div class="contact-icons">
-                    <i class='bx bxs-map-pin'></i>
-                    <p class="contact-header">ADDRESS</p>
-                    <p class="contact-feature">No 03, Pathum Uyana, Pallekale, Kundasale.</p>
-                </div>
-
-
-                <div class="contact-icons">
-                    <i class='bx bxs-envelope'></i>
-                    <p class="contact-header">EMAIL</p>
-                    <p class="contact-feature"><a
-                            href="mailto:sandumi.20232516@iit.ac.lk">sandumi.20232516@iit.ac.lk</a></p>
-                </div>
-            </div>
+          <div class="contact-icons">
+            <i class="bx bxs-envelope"></i>
+            <p class="contact-header">EMAIL</p>
+            <p class="contact-feature">
+              <a href="mailto:sandumi.20232516@iit.ac.lk"
+                >sandumi.20232516@iit.ac.lk</a
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </main>
 
     <footer>
-        Date modified: 2024 <br>
-        <a href="home.html">Sandumi Godage</a>
+      Date modified: 2024 <br />
+      <a href="home.html">Sandumi Godage</a>
     </footer>
-</body>
-
+  </body>
 </html>
