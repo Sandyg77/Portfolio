@@ -38,11 +38,10 @@ body {
 
 .mobile-menu-btn {
   display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #e8e9ec;
-  font-size: 1.5rem;
+}
+
+#mobile-menu-toggle {
+  display: none; /* Hide checkbox in all views */
 }
 
 .navbar ul {
@@ -630,21 +629,28 @@ footer a:hover {
   color: white;
   text-decoration: underline;
 }
+
 /* Mobile menu functionality - CSS only solution */
 @media (max-width: 992px) {
   .mobile-menu-btn {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    z-index: 101;
-    /* Convert button to checkbox label for CSS-only toggle */
+    display: block; /* Only display in mobile view */
+    position: relative; /* Changed from absolute to relative */
     cursor: pointer;
+    z-index: 101;
   }
 
-  /* Hide the actual checkbox but use it as a state controller */
+  /* Make checkbox invisible but still clickable in mobile view */
   #mobile-menu-toggle {
-    display: none;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 102; /* Higher than the menu button */
+    margin: 0;
   }
 
   .logo-container {
@@ -668,7 +674,6 @@ footer a:hover {
     background: #151f38;
     border-radius: 0 0 10px 10px;
   }
-
   /* When checkbox is checked, show the menu */
   #mobile-menu-toggle:checked ~ .navbar ul {
     max-height: 500px;
