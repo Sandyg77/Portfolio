@@ -699,8 +699,9 @@ footer a:hover {
   }
 
   .image-container {
-    max-width: 100%;
+    max-width: auto;
     margin-top: 2rem;
+    height: auto;
   }
 
   .social-media-icons {
